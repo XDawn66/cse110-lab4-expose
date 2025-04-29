@@ -6,6 +6,7 @@
  * @returns The sum of the two numbers if add is true and false otherwise.
  */
 function sumValues(num1, num2, add) {
+  add = Boolean(add);
   if (add) {
     let result = 0;
 
