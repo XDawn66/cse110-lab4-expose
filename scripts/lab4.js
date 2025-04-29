@@ -28,7 +28,7 @@ function discountPrices(prices, discount) {
   if (
     prices.length === 0 ||
     typeof discount !== "number" ||
-    typeof prices !== "array"
+    typeof prices !== "object"
   ) {
     return false;
   }
