@@ -6,15 +6,15 @@
  * @returns The sum of the two numbers if add is true and false otherwise.
  */
 function sumValues(num1, num2, add) {
-  add = Boolean(add);
-  if (add) {
+  let valid = !isNaN(Number(num1)) && !isNaN(Number(num2));
+  if (add && valid) {
     let result = 0;
 
     result = num1 + num2;
 
     return result;
   } else {
-    return !add;
+    return false;
   }
 }
 
